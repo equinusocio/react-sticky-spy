@@ -22,11 +22,19 @@ Import the component and wrap your sticky element. This component doesn't add an
 import { StickySpy } from 'react-sticky-spy'
 
 const MyPage = () => (
-  <StickySpy>
-    <h1 style={{ position: 'sticky', top: 0 }}>Position sticky title</h1>
+  <div style={{ overflow: 'auto' }}>
+    <StickySpy>
+      <h1 style={{ position: 'sticky', top: 0 }}>Position sticky title</h1>
+    </StickySpy>
     ...
-  </StickySpy>
+  <div>
 )
+```
+
+```css
+h1[data-react-is-sticky="true"] {
+  border-bottom: 1px solid gray;
+}
 ```
 
 > **Warning**
