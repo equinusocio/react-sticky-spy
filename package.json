@@ -2,7 +2,17 @@
   "name": "react-sticky-spy",
   "private": false,
   "version": "1.0.0",
+  "homepage": "https://github.com/equinusocio/react-sticky-spy",
+  "author": "equinusocio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equinusocio/react-sticky-spy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/react-sticky-spy/issues"
+  },
   "type": "module",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -18,7 +28,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "build:csstypes": "tcm -p '**/*.module.css' src",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "change": "changeset",
+    "release": "changeset version && changeset publish"
   },
   "peerDependencies": {
     "react": "^18.0.0",

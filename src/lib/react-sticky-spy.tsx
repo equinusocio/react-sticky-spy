@@ -2,12 +2,22 @@ import React, {
   Children, cloneElement, FC, isValidElement, PropsWithChildren, ReactElement, useEffect, useRef, useState,
 } from 'react';
 
-type StickySpyProps = PropsWithChildren<{
+export type StickySpyProps = PropsWithChildren<{
+  /**
+   * Set a custom name for the attribute
+   * @default "data-react-is-sticky"
+   */
   attribute?: string;
+  /**
+   * Callback function that is called when the sticky element changes
+   * @param isSticky Current state of the sticky element
+   */
+  onStickyChange?: (isSticky: boolean) => void;
 }>
 
 export const StickySpy: FC<StickySpyProps> = ({
   children,
+  onStickyChange,
   attribute = 'data-react-is-sticky',
 }) => {
   const spyRef = useRef<HTMLDivElement>(null);
@@ -17,6 +27,7 @@ export const StickySpy: FC<StickySpyProps> = ({
     const spy = spyRef.current;
     const observer = new IntersectionObserver(([entry]) => {
       setIsStuck(!entry.isIntersecting);
+      onStickyChange?.(!entry.isIntersecting);
     });
 
     if (spy) {
@@ -24,11 +35,11 @@ export const StickySpy: FC<StickySpyProps> = ({
     }
 
     return () => (spy ? observer.unobserve(spy) : undefined);
-  }, [children, spyRef]);
+  }, [children, spyRef, onStickyChange]);
 
   return (
     <>
-      <div ref={spyRef} />
+      <div ref={spyRef} data-react-sticky-spy style={{ height: 0, position: 'absolute' }} />
       {Children.map(
         children,
         child => (isValidElement(child) ? cloneElement(child as ReactElement, { [attribute]: isStuck }) : child),

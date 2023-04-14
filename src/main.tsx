@@ -3,12 +3,12 @@ import './main.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { StickySpy } from './lib/sticky-spy';
+import { StickySpy } from './lib/react-sticky-spy';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <div>
-      <StickySpy>
+      <StickySpy onStickyChange={isSticky => alert(isSticky)}>
         <header>HEADER</header>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perferendis quod debitis enim, minima ut eligendi odio, itaque repellendus voluptatibus ex illum eos magnam commodi voluptatem fugit voluptatum omnis reiciendis.
         Qui veritatis quae assumenda sequi iure quaerat asperiores cupiditate debitis obcaecati magnam ratione, autem maxime in fuga reiciendis alias maiores non aspernatur iste quasi dolor id ex. Totam, temporibus illum!
@@ -111,8 +111,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         Laboriosam eos quisquam, cumque, non sed ex placeat ullam mollitia eius consectetur fuga provident porro dolore ipsam ipsa neque repellendus in quae voluptatem veniam nobis maxime. Vel deserunt laborum consequatur!
         Sunt in eaque ratione accusamus dolorem a alias odio repellat earum eos, iusto assumenda suscipit excepturi animi est error? Minima nemo illum fugiat atque veritatis voluptatibus delectus reprehenderit veniam placeat.
       </StickySpy>
-    </div>
-    <div>
       <StickySpy>
         <h1>Title</h1>
       </StickySpy>
