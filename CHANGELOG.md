@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.2.2
+
+### Patch Changes
+
+- c2993a7: Update usage
+
 ## 1.2.1
 
 ### Patch Changes
