@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "kamikillerto.vscode-colorize",
+    "dbaeumer.vscode-eslint",
+    "csstools.postcss",
+    "stylelint.vscode-stylelint",
+    "phoenisx.cssvar",
+    "lasalefamine.vscode-css-vars"
+  ]
+}

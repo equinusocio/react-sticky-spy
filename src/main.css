@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+header, h1 {
+  background: gray;
+  padding: 32px 48px;
+  position: sticky;
+  top: 0;
+}
+
+[data-react-is-sticky="true"] {
+  background: red;
+}
