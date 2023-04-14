@@ -2,6 +2,10 @@
 
 Super minimal `400 byte` css-free react component that detect and add a custom attribute to a `position: sticky` element when it is stuck inside the scrolling container.
 
+> **Warning**
+> The `CSS` for the sticky position is not included. Add your own style to the wrapped element.
+
+
 ## Installation
 
 Install the package with your favourite package manager:
@@ -29,7 +33,7 @@ const MyPage = () => (
 )
 ```
 
-## API References
+## API Reference
 
 ```ts
 export type StickySpyProps = PropsWithChildren<{
