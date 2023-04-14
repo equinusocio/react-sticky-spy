@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.2.0
+
+### Minor Changes
+
+- 2260eb2: Add callback
+
 ## 1.1.3
 
 ### Patch Changes
