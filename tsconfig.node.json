@@ -4,7 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
-    "jsx": "react"
+    "jsx": "react",
   },
   "include": ["vite.config.ts"]
 }

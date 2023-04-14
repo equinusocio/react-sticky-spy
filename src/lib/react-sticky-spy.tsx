@@ -1,5 +1,14 @@
 import React, {
-  Children, cloneElement, FC, isValidElement, PropsWithChildren, ReactElement, useEffect, useRef, useState,
+  Children,
+  cloneElement,
+  FC,
+  Fragment,
+  isValidElement,
+  PropsWithChildren,
+  useEffect,
+  useId,
+  useRef,
+  useState,
 } from 'react';
 
 export type StickySpyProps = PropsWithChildren<{
@@ -22,6 +31,7 @@ export const StickySpy: FC<StickySpyProps> = ({
 }) => {
   const spyRef = useRef<HTMLDivElement>(null);
   const [isStuck, setIsStuck] = useState(false);
+  const uid = useId();
 
   useEffect(() => {
     const spy = spyRef.current;
@@ -38,12 +48,12 @@ export const StickySpy: FC<StickySpyProps> = ({
   }, [children, spyRef, onStickyChange]);
 
   return (
-    <>
-      <div ref={spyRef} data-react-sticky-spy style={{ height: 0, position: 'absolute' }} />
+    <Fragment key={uid}>
+      <div ref={spyRef} data-react-sticky-spy style={{ height: 0, width: 0, position: 'absolute' }} />
       {Children.map(
         children,
-        child => (isValidElement(child) ? cloneElement(child as ReactElement, { [attribute]: isStuck }) : child),
+        child => (isValidElement(child) ? cloneElement(child, { [attribute]: isStuck }) : child),
       )}
-    </>
+    </Fragment>
   );
 };
