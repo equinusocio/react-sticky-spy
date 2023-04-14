@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.2.1
+
+### Patch Changes
+
+- 8862636: Add fragment key
+
 ## 1.2.0
 
 ### Minor Changes
