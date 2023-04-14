@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.1.3
+
+### Patch Changes
+
+- Minor fixes
+
 ## 1.1.2
 
 ### Patch Changes
