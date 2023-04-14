@@ -1,7 +1,10 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
-  "commit": false,
+  "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
+  "changelog": [
+    "@changesets/cli/changelog",
+    { "repo": "equinusocio/react-sticky-spy" }
+  ],
+  "commit": true,
   "fixed": [],
   "linked": [],
   "access": "public",
