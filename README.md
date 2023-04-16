@@ -14,6 +14,8 @@ pnpm i react-stycky-spy
 yarn add react-stycky-spy
 ```
 
+### [👉 Live Demo](https://react-sticky-spy.stackblitz.io)
+
 ## Usage
 
 Import the component and wrap your sticky element. This component doesn't add any wrapper so your markup and style is safe (well, it adds just a empty spy element before but...Hey 👉😎👉, it's free)
