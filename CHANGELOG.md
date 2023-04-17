@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.2.4
+
+### Patch Changes
+
+- 85f7dd8: Fix spy size
+
 ## 1.2.3
 
 ### Patch Changes
