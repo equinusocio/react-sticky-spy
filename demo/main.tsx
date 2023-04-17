@@ -3,7 +3,7 @@ import './main.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { StickySpy } from '../lib';
+import { StickySpy } from '../src';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

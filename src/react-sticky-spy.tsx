@@ -49,7 +49,7 @@ export const StickySpy: FC<StickySpyProps> = ({
 
   return (
     <Fragment key={uid}>
-      <div ref={spyRef} data-react-sticky-spy style={{ height: 1, width: 1, position: 'absolute' }} />
+      <div ref={spyRef} data-react-sticky-spy style={{ height: 0, width: 1 }} />
       {Children.map(
         children,
         child => (isValidElement(child) ? cloneElement(child, { [attribute]: isStuck }) : child),
