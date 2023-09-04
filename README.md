@@ -7,11 +7,11 @@ Super minimal `400 byte` css and dependencies free react component that detects 
 Install the package with your favourite package manager:
 
 ```sh
-npm i react-stycky-spy
+npm i react-sticky-spy
 # or
-pnpm i react-stycky-spy
+pnpm i react-sticky-spy
 # or
-yarn add react-stycky-spy
+yarn add react-sticky-spy
 ```
 
 ### [👉 Live Demo](https://react-sticky-spy.stackblitz.io)
