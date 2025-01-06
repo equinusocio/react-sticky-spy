@@ -1,3 +1,5 @@
+'use client';
+
 import React, {
   Children,
   cloneElement,
@@ -52,7 +54,7 @@ export const StickySpy: FC<StickySpyProps> = ({
       <div ref={spyRef} data-react-sticky-spy style={{ height: 0, width: 1 }} />
       {Children.map(
         children,
-        async child => (isValidElement(child) ? cloneElement(child, { [attribute]: isStuck }) : child),
+        child => (isValidElement(child) ? cloneElement(child, { [attribute]: isStuck }) : child),
       )}
     </Fragment>
   );

@@ -31,5 +31,7 @@ export default [{
   rules: {
     "import/no-extraneous-dependencies": "off",
     "react/require-default-props": "off",
+    'require-await': 'off',
+    '@typescript-eslint/require-await': 'off',
   },
 }];
