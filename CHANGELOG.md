@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.3.1
+
+### Patch Changes
+
+- d6fb6d0: Fix client side
+
 ## 1.3.0
 
 ### Minor Changes
