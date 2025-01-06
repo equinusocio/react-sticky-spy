@@ -9,6 +9,9 @@ export default defineConfig({
   plugins: [dts({
     insertTypesEntry: true,
   })],
+  server: {
+    open: true,
+  },
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
@@ -26,6 +29,7 @@ export default defineConfig({
         // for externalized deps
         globals: {
           react: 'React',
+          'react-dom': 'ReactDOM'
         },
       },
     },
