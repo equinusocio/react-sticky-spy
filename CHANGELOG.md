@@ -1,5 +1,12 @@
 # react-sticky-spy
 
+## 1.3.0
+
+### Minor Changes
+
+- fc00862: Update depes and react version
+- f262d41: Update deps and react
+
 ## 1.2.4
 
 ### Patch Changes
