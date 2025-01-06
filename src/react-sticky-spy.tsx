@@ -54,6 +54,7 @@ export const StickySpy: FC<StickySpyProps> = ({
       <div ref={spyRef} data-react-sticky-spy style={{ height: 0, width: 1 }} />
       {Children.map(
         children,
+        // eslint-disable-next-line @typescript-eslint/promise-function-async
         child => (isValidElement(child) ? cloneElement(child, { [attribute]: isStuck }) : child),
       )}
     </Fragment>
