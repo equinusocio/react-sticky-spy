@@ -1,5 +1,11 @@
 # react-sticky-spy
 
+## 1.3.2
+
+### Patch Changes
+
+- ef74ae9: Fix types imports
+
 ## 1.3.1
 
 ### Patch Changes
