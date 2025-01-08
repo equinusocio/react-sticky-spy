@@ -20,7 +20,8 @@
   "exports": {
     ".": {
       "import": "./dist/react-sticky-spy.js",
-      "require": "./dist/react-sticky-spy.umd.cjs"
+      "require": "./dist/react-sticky-spy.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
