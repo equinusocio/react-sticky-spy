@@ -33,5 +33,6 @@ export default [{
     "react/require-default-props": "off",
     'require-await': 'off',
     '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/promise-function-async': 'off'
   },
 }];
